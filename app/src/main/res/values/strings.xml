@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="sub_activity">Sub Activity</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fragment</string>
+    <string name="fourth_fragment">Fourth Fragment</string>
+    <string name="destination_button">next</string>
+    <string name="snackbar_button">snackbar</string>
+</resources>
