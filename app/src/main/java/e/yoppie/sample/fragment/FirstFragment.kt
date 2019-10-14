@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import com.jakewharton.rxbinding3.view.clicks
+import com.jakewharton.rxbinding3.view.longClicks
 import e.yoppie.sample.R
 import e.yoppie.sample.databinding.FragmentFirstBinding
 import e.yoppie.sample.define.FragmentType
@@ -42,6 +43,9 @@ class FirstFragment : Fragment() {
             lifecycleOwner = this@FirstFragment
             destinationButton.clicks().subscribe {
                 Navigation.findNavController(binding.root).navigate(R.id.action_first_to_second)
+            }
+            destinationButton.longClicks().subscribe {
+                Navigation.findNavController(binding.root).navigate(R.id.action_first_to_third)
             }
             snackbarButton.clicks().subscribe {
                 sharedViewModel.isSelected.postValue(FragmentType.FIRST)
